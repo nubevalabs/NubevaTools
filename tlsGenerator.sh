@@ -15,7 +15,7 @@ fi
 
 for ((n=0;n<$num_iterations;n++))
 do
-    Grab EICAR as binary
+    #Grab EICAR as binary
     wget -q -O /dev/null https://secure.eicar.org/eicar.com
     sleep $[ ( $RANDOM % 10 )  + 15 ]s
     #TLS version of TestmyIDS.com
