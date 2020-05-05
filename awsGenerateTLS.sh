@@ -8,19 +8,19 @@ NAME=
 
 while true; do
 #Grab EICAR as binary
-curl -s https://secure.eicar.org/eicar.com > /dev/null
+curl -s -k https://secure.eicar.org/eicar.com > /dev/null
 sleep $[ ( $RANDOM % 10 )  + 15 ]s
 #TLS version of TestmyIDS.com
-curl -s https://nubevalabs.s3.amazonaws.com/testmyids.txt > /dev/null
+curl -s -k https://nubevalabs.s3.amazonaws.com/testmyids.txt > /dev/null
 sleep $[ ( $RANDOM % 10 )  + 15 ]s
 #Download Google Homepage via TLS 1.3
-curl -s https://www.google.com > /dev/null
+curl -s -k https://www.google.com > /dev/null
 sleep $[ ( $RANDOM % 10 )  + 15 ]s
 #Download BBC Homepage via TLS
-curl -s https://www.bbc.com > /dev/null
+curl -s -k https://www.bbc.com > /dev/null
 sleep $[ ( $RANDOM % 10 )  + 15 ]s
 #Download Malware Sample from Fireeye. Original URL http://fedeploycheck.fireeye.com/appliance-test/test-infection.exe
-curl -s https://nubevalabs.s3.amazonaws.com/samples/malware-test-infection.exe > /dev/null
+curl -s -k https://nubevalabs.s3.amazonaws.com/samples/malware-test-infection.exe > /dev/null
 sleep $[ ( $RANDOM % 10 )  + 15 ]s
 done
 
