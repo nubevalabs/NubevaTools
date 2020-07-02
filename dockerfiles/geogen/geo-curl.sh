@@ -1,6 +1,6 @@
 
 #!/bin/bash
-
+#NOTES: USe this as the basis for creating a container to generate traffic that will populate geographical territory
 
 #set arguements
 NAME=
