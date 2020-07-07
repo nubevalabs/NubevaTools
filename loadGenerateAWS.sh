@@ -16,5 +16,5 @@ curl -s -O /dev/null http://nubevalabs.com/1MB.zip
 #curl -s -O /dev/null https://nubevalabs.com/1MB.zip
 
 
-sleep $[ ( $RANDOM % 5 )  + 1 ]s
+sleep $[ ( $RANDOM % 1 )  + 1 ]s
 done
